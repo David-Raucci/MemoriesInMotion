@@ -1,0 +1,27 @@
+.about-container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../../../assets/bg-image1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.message-container {
+    width: 60%;
+}
+
+#page-title {
+    padding: 5vh;
+    margin: 5vh;
+    font-size: 2em;
+    border-bottom: solid #444 1px;
+}
+
+p {
+    line-height: 5vh;
+    font-size: 1.2em;
+    font-weight: 500;
+}

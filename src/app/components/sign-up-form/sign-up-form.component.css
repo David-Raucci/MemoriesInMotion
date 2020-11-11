@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/kayak.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    border: solid #444 5px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s;
+
+}
+
+.form-container:hover {
+    border: solid #222 5px;
+    box-shadow: 5px 10px 8px 4px #444;
+    transform: translate(-.3vw, -.2vw);
+    transition-timing-function: ease-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    width: 80%;
+    align-self: center;
+}
+
+label {
+    color: #eee;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+input {
+    border-radius: 4px;
+    height: 4vh;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#sign-up-title {
+    font-size: 2em;
+    align-self: center;
+    padding: 2vh;
+    font-weight: 500;
+    color: #eee;
+}
+
+button {
+    margin: 2vh;
+    padding: 2vh;
+    border: solid 3px #eee;
+    background: none;
+    border-radius: 12px;
+    align-self: center;
+    color: #eee;
+}

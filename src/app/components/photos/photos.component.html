@@ -1,0 +1,16 @@
+<main>
+    <div class="page-title">
+        <p>A picture deserves a thousand words.</p>
+    </div>
+    <div class="input-container">
+        <input type="file" (change)="onChange($event)">
+        <button type="button" (click)="submit()">Upload</button>
+    </div>
+    <div class="img-collection-container">
+        <div class="image-container" style="background-image: url('{{pic}}')" *ngFor="let pic of picList">
+        </div>
+    </div>
+    <div class="img-text-conatiner">
+        <textarea placeholder="Share this moment..." name="" id="image-text" cols="60" rows="5"></textarea>
+    </div>
+</main>

@@ -1,0 +1,38 @@
+<div class="life-questions-container">
+    <form [formGroup]="lifeQuestionDetails" (ngSubmit)="onSubmit()">
+        <p id="life-questions-title">Life Questions</p>
+        <div class="question-container">
+            <button type="button" id="question-button" (click)="generateNumber()">Generate a Question</button>
+            <textarea
+                type="text"
+                id="question-text"
+                formControlName="question"
+                cols="70"
+                rows="2"
+                style="max-width: 100%;"
+                disabled>
+            </textarea>
+            <textarea
+                formControlName="answer"
+                name=""
+                id=""
+                cols="70"
+                rows="10"
+                style="max-width: 100%;"
+                placeholder="Answer Here...">
+            </textarea>
+            <button type="submit" id="answer-button" (click)="onSubmit()">Submit</button>
+        </div>
+    </form>
+    <div class="question-list">
+        <select class="select" name="" id="qlist">
+            <option value="Answered">Answered</option>
+            <option value="Unanswered">Unaswered</option>
+            <option value="Chronological" selected>Chronological</option>
+        </select>
+        <div class="qlist-item" *ngFor="let qItem of qItems">
+            Question {{qItem.questionId}}: {{qItem.question}}
+            <input type="radio" checked *ngIf="isAnswered(qItem.answer)">
+        </div>
+    </div>
+</div>

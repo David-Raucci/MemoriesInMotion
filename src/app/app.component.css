@@ -1,0 +1,25 @@
+.title-container {
+    height: 20vh;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../assets/friendsCrop.jpg);
+    border-bottom: solid 1vh #eee;
+
+}
+
+h1 {
+    padding: 1.5vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    color: #eee;
+    margin-bottom: 2vh;
+    letter-spacing: 1px;
+}
+
+.app-footer {
+    justify-content: end;
+}

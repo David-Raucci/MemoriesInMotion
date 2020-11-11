@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+    background: linear-gradient(to bottom right, #ffffff 0%, #7ac6ff 100%);;
+}
+
+p {
+    margin: 3vh;
+}

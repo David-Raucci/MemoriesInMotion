@@ -1,0 +1,69 @@
+<main>
+  <div class="form-container">
+    <p id="sign-up-title">Account Details</p>
+    <form [formGroup]="userAccountDetails" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input required type="email" formControlName="email" >
+        <!-- <button>Edit</button> -->
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input required type="password" formControlName="password" >
+        <!-- <button>Edit</button> -->
+      </div>
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input required type="text" formControlName="firstName" >
+        <!-- <button>Edit</button> -->
+      </div>
+      <div class="form-group">
+        <label for="middle-name">Middle Name</label>
+        <input required type="text" formControlName="middleName" >
+        <!-- <button>Edit</button> -->
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input required type="text" formControlName="lastName" >
+        <!-- <button>Edit</button> -->
+      </div>
+      <button type="submit" id="submit-button">Update</button>
+    </form>
+  </div>
+</main>
+
+
+
+
+
+
+
+
+<!-- <mat-tab label = "Sign up">
+<mat-card-content>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit('signup')">
+<mat-form-field>
+<input type="text" matInput class="au-input au-input-xl" formControlName="username" required placeholder="Enter your username" />
+<mat-icon matSuffix>perm_identity</mat-icon>
+<mat-error *ngIf="loginForm.get('username').invalid"> Username is required </mat-error>
+</mat-form-field>
+<mat-form-field>
+<input type="text" matInput class="au-input au-input-xl" formControlName="email" required placeholder="Enter your email" />
+<mat-error *ngIf="loginForm.get('email').invalid">Email is required</mat-error>
+<mat-icon matSuffix>email</mat-icon>
+</mat-form-field>
+<mat-form-field>
+<input type="password" matInput class="au-input au-input-xl" formControlName="password" required placeholder="Enter your password"/>
+<mat-error *ngIf="loginForm.get('password').errors && loginForm.get('password').errors.required">Password is required </mat-error>
+<mat-error *ngIf="loginForm.get('password').errors && loginForm.get('password').errors.minlength"> Password must be of length 6</mat-error>
+<mat-icon matSuffix>lock</mat-icon>
+
+</mat-form-field>
+<mat-form-field>
+<input type="password" matInput class="au-input au-input-xl" formControlName="repassword" required placeholder="Reenter your password"/>
+<mat-error *ngIf="loginForm.get('repassword').errors && loginForm.get('repassword').errors.required">
+Re-Enter Password is required
+</mat-error>
+<mat-icon matSuffix>lock</mat-icon>
+</mat-form-field> -->

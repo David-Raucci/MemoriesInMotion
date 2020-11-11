@@ -1,0 +1,64 @@
+
+<main>
+  <div class="form-container">
+    <p id="sign-up-title">SIGN UP FORM</p>
+    <form ngNativeValidate [formGroup]="userAccountForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input required type="email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input required type="password" formControlName="password">
+      </div>
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input required type="text" formControlName="firstName">
+      </div>
+      <div class="form-group">
+        <label for="middle-name">Middle Name</label>
+        <input required type="text" formControlName="middleName">
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input required type="text" formControlName="lastName">
+      </div>
+      <button>Submit</button>
+    </form>
+  </div>
+</main>
+
+
+
+
+<!-- <main>
+  <div class="form-container">
+    <p id="sign-up-title">SIGN UP FORM</p>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+    <div class="form-group">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name">
+    </div>
+    <div class="form-group">
+      <label for="middle-name">Middle Name</label>
+      <input type="text" id="middle-name">
+    </div>
+    <div class="form-group">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name">
+    </div>
+    <div class="form-group">
+      <label for="date-of-birth">Date of Birth</label>
+      <input type="text" id="date-of-birth">
+    </div>
+      <button>Submit</button>
+
+  </div>
+</main> -->

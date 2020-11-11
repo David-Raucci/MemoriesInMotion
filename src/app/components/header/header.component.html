@@ -1,0 +1,11 @@
+<nav>
+    <div class="nav-items">
+        <a routerLink="/home" routerLinkActive="active-link">Home</a>
+        <a routerLink="/about" routerLinkActive="active-link">About</a>
+        <a routerLink="/features" routerLinkActive="active-link">Features</a>
+        <a *ngIf="this.hardcodeAuth.isUserLoggedIn()" routerLink="/account" routerLinkActive="active-link">Account</a>
+        <a *ngIf="this.hardcodeAuth.isUserLoggedIn()" routerLink="/logout" routerLinkActive="active-link">Logout</a>
+        <a *ngIf="!this.hardcodeAuth.isUserLoggedIn()" routerLink="/login-form" routerLinkActive="active-link">Login</a>
+        <a *ngIf="!this.hardcodeAuth.isUserLoggedIn()" routerLink="/sign-up" routerLinkActive="active-link">SignUp</a>
+    </div>
+</nav>

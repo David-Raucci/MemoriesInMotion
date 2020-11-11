@@ -1,0 +1,42 @@
+nav {
+    height: 6vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  color: #eee;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+a:hover {
+  background-color: #eee;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.login-container {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  width: 50%;
+}

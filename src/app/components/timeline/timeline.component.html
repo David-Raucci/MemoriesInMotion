@@ -1,0 +1,19 @@
+<div class="timeline-container">
+    <p id="timeline-title">Timeline</p>
+    <!-- <div class="construction-container">
+        <p>Upcoming feature! Check back in shortly!</p>
+    </div>
+    <div class="img-container"></div> -->
+    <div class="history-chain">
+        <div class="history-link" *ngFor="let link of myObjects; let i = index">
+            <div class="photo-container" style="background-image: url({{link.picture}});"></div>
+            <div class="timeline-bar">
+                <p id="date">{{link.date}}</p>
+                <!-- <input id="date" type="text"> -->
+            </div>
+            <div class="text-container">
+                <textarea name="" id="" placeholder={{link.blurb}}></textarea>
+            </div>
+        </div>
+    </div>
+</div>

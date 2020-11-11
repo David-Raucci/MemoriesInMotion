@@ -1,0 +1,37 @@
+footer {
+    background-color: #ddd;
+    border-top: solid #444 1px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.site-map {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+}
+
+.copyright-container {
+    display: flex;
+    padding: 3vh;
+    border-top: solid #222 1px;
+
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    color: #222;
+    transition: 0.2s;
+  }
+
+  a:hover {
+      background-color: #eee;
+  }

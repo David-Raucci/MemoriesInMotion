@@ -1,0 +1,14 @@
+<div class="account-container">
+    <div class="account-sidebar">
+        <a class="a-sidebar" routerLink="account-details" routerLinkActive="active-link">Account Details</a>
+        <a class="a-sidebar" routerLink="timeline" routerLinkActive="active-link">Timeline</a>
+        <a class="a-sidebar" routerLink="photos" routerLinkActive="active-link">Upload Photos</a>
+        <a class="a-sidebar" routerLink="questions" routerLinkActive="active-link">Life Questions</a>
+        <a class="a-sidebar" routerLink="my-contacts" routerLinkActive="active-link">My Contacts</a>
+        <a class="a-sidebar" routerLink="Incentives" routerLinkActive="active-link">Incentives</a>
+        <a class="a-sidebar" routerLink="admin-questions" routerLinkActive="active-link" *ngIf="isAdmin()" id="q-service">Question Service</a>
+    </div>
+    <div class="account-display">
+        <router-outlet></router-outlet>
+    </div>
+</div>

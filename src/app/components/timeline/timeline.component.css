@@ -1,0 +1,79 @@
+.timeline-container {
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+#timeline-title {
+    margin: 5vh;
+    font-size: 2em;
+
+}
+
+.construction-container {
+    margin: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container {
+    background-image: url(../../../assets/construction.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.history-link{
+    display: flex;
+    justify-content: flex-start;
+    height: 20vh;
+    width: 100%;
+    margin: 1vh;
+}
+
+.timeline-bar {
+    width: 5%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+
+}
+
+#date {
+    transform: rotate(45deg);
+    font-weight: 600;
+    color: #eee;
+    max-width: 5vw;
+    min-height: 4vh;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.1em;
+}
+
+.photo-container {
+    height: 100%;
+    width: 25%;
+    background-size: cover;
+}
+
+.text-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6)
+
+}
+
+textarea {
+    min-width: 80%;
+    min-height: 80%;
+    padding: 2vh;
+    resize: none;
+}
